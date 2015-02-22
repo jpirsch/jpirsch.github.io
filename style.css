@@ -1,3 +1,8 @@
+h1 {
+	margin-left: 45%;
+	color: #444444;
+}
+
 /* Mobile */
 body::before {
   display: none;
