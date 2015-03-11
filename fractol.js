@@ -14,7 +14,7 @@ function mandelbrot(imageData, x1, y1, zoom, decalx){
 	y0 = ((y1 / imageData.height) * 2) * zoom - decaly;
 	x = 0;
 	y = 0;
-	while (i < 1000 && x * x + y * y < 4){
+	while (i < 150 && x * x + y * y < 4){
 		xtemp = x * x - y * y + x0;
 		y = 2 * x * y + y0;
 		x = xtemp;
