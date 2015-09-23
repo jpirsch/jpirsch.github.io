@@ -1,136 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Work Gallery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
 
-	<link href="dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="dist/css/style.css" rel="stylesheet">
+	<link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../dist/css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="../dist/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
 
-  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
-    <script src="dist/js/html5shiv.js"></script>
-  <![endif]-->
-
-  <!-- Fav and touch icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
-  <link rel="shortcut icon" href="img/favicon.png">
-  
-	<script type="text/javascript" src="dist/js/jquery.min.js"></script>
-	<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-<div class="container">
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<div class="jumbotron well">
-				<h1>Work gallery</h1>
-				<p>
-					This page is a gallery to show the projects I do at the school 42. It is a place of experimentation and subject to quick changes :"Move fast and break things !".
-
-				</p>
-			</div>
-			<div class="row clearfix">
-				<div class="col-md-4 column">
-					<a href="data.html">
-					<img class="img-rounded" alt="140x140" src="dist/img/wip.png">
-				</a>
-					<dl>
-						<dt>Fdf</dt>
-						<dd>
-							This project is the first of the graphic projects to do in the first year at 42.
-						</dd>
-						<dt>Rendering technique</dt>
-						<dd>
-							The subject given asked to use at least one of the three following projection to see the 3d map : parallel, isometric, conic.
-						</dd>
-					</dl>
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="navbar-header">
+					 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button> <a class="navbar-brand" href="#">Home</a>
 				</div>
-				<div class="col-md-4 column">
-					<a href="42/42.2/wolf3d.html">
-					<img class="img-rounded" alt="140x140" src="dist/img/wip.png">
-					</a>
-					<dl>
-						<dt>Wolf 3d</dt>
-						<dd>
-							This graphic projects aims to create a program to simulate a simple 3d environment like in the game Wolfenstein 3d.
-						</dd>
-						<dt>Rendering technique</dt>
-						
-							The technique employed, ray casting, was one of the first technique for 3d games.
-						</dd>
-					</dl>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">42</a>
+						</li>
+						<li>
+							<a href="../piscines/piscines.html">Piscines</a>
+						</li>
+						<li>
+							<a href="../misc/misc.html">Misc</a>
+						</li>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">42</a>
+								</li>
+								<li>
+									<a href="../piscines/piscines.html">Piscines</a>
+								</li>
+								<li>
+									<a href="../misc/misc.html">Misc</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
-				<div class="col-md-4 column">
-					<a href="42/42.1/fractol.html">
-					<img class="img-rounded" alt="140x140" src="dist/img/wip.png">
-					</a>
-					<dl>
-						<dt>Fractol</dt>
-						<dd>
-							In this project the goal was to render fractals like the Mandelbrot set.
-						</dd>
-						<dt>Rendering technique</dt>
-						<dd>
-							Here the rendering is easy as the pseudo code given in the wikipedia article can be implemented as is.
-						</dd>
-						<dt>Optimization</dt>
-						<dd>
-							The image is easy to render, but it is still really slow for present hardware if not optimized.
-						</dd>
-					</dl>
-				</div>
-			</div>
-			<div class="row clearfix">
-				<div class="col-md-4 column">
-					<img class="img-rounded" alt="140x140" src="dist/img/wip.png">
-					<dl>
-						<dt>Libft</dt>
-						<dd>
-							This is the first project at 42 which is required for all other C projects.
-						</dd>
-						<dt>Goals</dt>
-						<dd>
-							Rewriting a lot of functions from the library string.h and other basic function allows to understand the logic of basic C language operations and behaviors. It is a good and necessary exercise because 42's norm doesn'tpermits the use of a library or function if it is not explicitly allowed in the subject.
-						</dd>
-					</dl>
-				</div>
-				<div class="col-md-4 column">
-					<img class="img-rounded" alt="140x140" src="dist/img/wip.png">
-					<dl>
-						<dt>Get next line</dt>
-						<dd>
-							As Libft, this project is necessary for a lot of other C projects.
-						</dd>
-						<dt>Goals</dt>
-						<dd>
-							 It is a function that reads a line in an open file, each time it is called, until the end of the file. It's use is to read in a file to load data like the map of the Fdf and Wolf 3d.
-						</dd>
-						<dt>Optimization</dt>
-						<dd>
-							As it is used to load data from a file, if a program has to read often in a file or has to load one big file it might be important to look for a good optimization of the get next line.
-						</dd>
-					</dl>
-				</div>
-				<div class="col-md-4 column">
-					<a href="tree.html">
-					<img class="img-rounded" alt="140x140" src="dist/img/wip.png">
-					</a>
-					<dl>
-						<dt>Ft_ls</dt>
-						<dd>
-							Here the goal is to write a program like the unix shell command ls.
-						</dd>
-					</dl>
-				</div>
-			</div>
+				
+			</nav>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
 			<ul class="breadcrumb">
 				<li>
 					<a href="#">Home</a> <span class="divider">/</span>
@@ -139,5 +71,7 @@
 		</div>
 	</div>
 </div>
-</body>
+
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
